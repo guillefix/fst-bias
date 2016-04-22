@@ -5,4 +5,4 @@ See more [in my TiddlyWiki](http://guillefix.me/cosmos.html#MMathPhys%20oral%20p
 
 ##Dependencies
 
-[FAdo](http://fado.dcc.fc.up.pt/software/)
+[FAdo](http://fado.dcc.fc.up.pt/software/) [docs](http://www.dcc.fc.up.pt/~rvr/FAdoDoc/index.html)
