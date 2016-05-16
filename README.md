@@ -13,13 +13,13 @@ Currently the best option seems to be the [HFST - Helsinki Finite-State Transduc
 
 as found [here](https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstDownloads#Installing_HFST_to_Linux_from_Ap). For *Linux* (for other options see [here](https://hfst.github.io/downloads/index.html))
 
-See their code, and installation instructions in [their GitHub](https://github.com/hfst/hfst)
-
-<!-- 1. Go to [Downloads page](http://apertium.projectjj.com/apt/nightly/pool/main/h/hfst/). You need the following files ``libhfst42``, ``hfst``, ``libhfst42-dev``. The version can be found with the command ``lsb_release -a``, and looking at the output of ``Codename``.
+1. Go to [Downloads page](http://apertium.projectjj.com/apt/nightly/pool/main/h/hfst/). You need the following files ``libhfst42``, ``hfst``, ``libhfst42-dev``. The version can be found with the command ``lsb_release -a``, and looking at the output of ``Codename``.
 
 2. Install them. `` dpkg --install libhfst42_***.deb``
   ``dpkg --install libhfst-dev_***.deb``
-  ``dpkg --install hfst_***.deb`` -->
+  ``dpkg --install hfst_***.deb``
+
+See also their code, and instructions for installing from source in [their GitHub](https://github.com/hfst/hfst) (doesn't work for me)
 
 One can then see examples of using the library [here](https://hfst.github.io/cplusplus/QuickStart.html), and the main classes in the library [here](https://hfst.github.io/cplusplus/namespacehfst.html).
 
