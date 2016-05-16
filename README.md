@@ -15,9 +15,9 @@ as found [here](https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstDownloads#Inst
 
 1. Go to [Downloads page](http://apertium.projectjj.com/apt/nightly/pool/main/h/hfst/). You need the following files ``libhfst42``, ``hfst``, ``libhfst42-dev``. The version can be found with the command ``lsb_release -a``, and looking at the output of ``Codename``.
 
-2. Install them. `` dpkg --install libhfst42_***.deb
-  dpkg --install libhfst-dev_***.deb
-  dpkg --install hfst_***.deb``
+2. Install them. `` dpkg --install libhfst42_***.deb``
+  ``dpkg --install libhfst-dev_***.deb``
+  ``dpkg --install hfst_***.deb``
 
 One can then see examples of using the library [here](https://hfst.github.io/cplusplus/QuickStart.html), and the main classes in the library [here](https://hfst.github.io/cplusplus/namespacehfst.html).
 
