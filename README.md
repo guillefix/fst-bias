@@ -30,3 +30,14 @@ The current test c++ file where I'm trying these ideas is ``cpp-fst/fst_bias.cc`
 ##Python implementation
 
 Using [FAdo](http://fado.dcc.fc.up.pt/software/) [docs](http://www.dcc.fc.up.pt/~rvr/FAdoDoc/index.html))
+
+##FST generation and lookup
+
+Use `genfst.py` to generate random FSTs, it has arguments:
+
+* `n`, number of states
+* `ki`, size of input alphabet
+* `ko`, size of output alphabet
+* `N`, number of FSTs produced. Not yet implemented.
+
+This prints the FST into AT&T format. To convert to HFST look-up-optimized binary format, use `hfst-txt2fst -f optimized-lookup-unweighted [input file] > [output file]`. Then one can use the HFST interactive lookup prompt, by typing `hfst-lookup [output file]`. **Note**: output states **are** taken into account, so that looking-up a string that doesn't end up in a final state, doesn't print the result..

@@ -15,12 +15,12 @@ from scipy import stats
 
 import matplotlib.pyplot as plt
 
-init = 3685
-Nmax = 200
+init = 3593
+Nmax = 1
 nbits = 30
-step = 100
+# step = 1
 Nin = 2**nbits
-Nsample = 3000
+Nsample = 1000
 
 frequency = Counter({})
 probustness = Counter({})
@@ -68,7 +68,7 @@ for s in range(init,init+Nmax):
             tr.addTransition(state, input, str(rand.randint(0, sout)), outstate)
 
     # print tr
-    # tr.display()
+    tr.display()
     temp_freq = Counter({})
     grobustness = Counter({})
     temp_pros = Counter({})
@@ -174,14 +174,14 @@ for s in range(init,init+Nmax):
 
     # plot the freq vs complexity graph
 
-    if sum(unbias) < 0.15 and sum(frcomp) < -0.25:
-        plt.clf()
-        plt.plot(complexities,freqAvs, 'o')
-        plt.ylabel('Average frequency')
-        plt.yscale('log')
-        plt.xlabel('complexity')
-        # plt.show()
-        plt.savefig('fst%d.png' %s)
+    #if sum(unbias) < 0.15 and sum(frcomp) < -0.25:
+    plt.clf()
+    plt.plot(complexities,freqAvs, 'o')
+    plt.ylabel('Average frequency')
+    plt.yscale('log')
+    plt.xlabel('complexity')
+    plt.show()
+    #plt.savefig('fst%d.png' %s)
 
 # plot the freq vs robsutness graph
 
