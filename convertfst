@@ -1,0 +1,10 @@
+#!/bin/bash
+# hfst-txt2fst -f optimized-lookup-unweighted [input file] > [output file]
+
+for i in $( ls fst ); do
+  inp="fst/"
+  inp+=$i
+  out="fstop/"
+  out+=$i
+  hfst-txt2fst -f optimized-lookup-unweighted $inp > $out
+done

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+mkdir comp/
+mkdir fst/
+mkdir fstop/
+mkdir genrobs/
+mkdir img/
+mkdir inputcnts/
+mkdir neistrout/
+mkdir openfstcomp/
+mkdir phenevols/
+mkdir str/
+mkdir strnei/
+mkdir strout/

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Dependency FAdo, HFST
+
+# $1 - number of states
+# $2 - size of (input) alphabet
+# $3 - size of (output) alphabet
+# $4 - number of transducers produced
+# $5 - input string size
+# $6 - number of input strings generated
+
+./reset
+
+python genfst.py $1 $2 $3 $4
+
+./convert
+
+./lookupfst $5 $2 $6 $4
+
+./inputcnt $4
+
+./KC $4

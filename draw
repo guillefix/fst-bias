@@ -1,0 +1,7 @@
+#!/bin/bash
+
+fstcompile fst/$1 openfstcomp/$1
+
+fstdraw -portrait openfstcomp/$1 | dot -Tjpg >img/$1.jpg
+
+xdg-open img/$1.jpg

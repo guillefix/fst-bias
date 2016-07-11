@@ -7,7 +7,7 @@ After exploration using Python (in py-fst folder), we are looking for faster imp
 
 ##C++ implementation
 
-Currently the best option seems to be the [HFST - Helsinki Finite-State Transducer Technology - C++ API](https://hfst.github.io/cplusplus/index.html)
+Currently the best option seems to be the [HFST - Helsinki Finite-State Transducer Technology - C++ API](https://hfst.github.io/cplusplus/index.html). See also [here](https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome).
 
 ### Installation instructions
 
@@ -40,4 +40,4 @@ Use `genfst.py` to generate random FSTs, it has arguments:
 * `ko`, size of output alphabet
 * `N`, number of FSTs produced. Not yet implemented.
 
-This prints the FST into AT&T format. To convert to HFST look-up-optimized binary format, use `hfst-txt2fst -f optimized-lookup-unweighted [input file] > [output file]`. Then one can use the HFST interactive lookup prompt, by typing `hfst-lookup [output file]`. **Note**: output states **are** taken into account, so that looking-up a string that doesn't end up in a final state, doesn't print the result..
+This prints the FST into [AT&T format](http://web.eecs.umich.edu/~radev/NLP-fall2015/resources/fsm_archive/fsm.5.html). To convert to HFST look-up-optimized binary format, use `hfst-txt2fst -f optimized-lookup-unweighted [input file] > [output file]` ([docs here](https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstTxt2Fst)). Then one can use the HFST interactive lookup prompt, by typing `hfst-lookup [output file]`. **Note**: output states **are** taken into account, so that looking-up a string that doesn't end up in a final state, doesn't print the result..

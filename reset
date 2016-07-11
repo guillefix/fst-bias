@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm fst/*
+rm fstop/*
+rm str/*
+rm strout/*
+rm inputcnts/*

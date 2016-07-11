@@ -1,0 +1,15 @@
+runall - run all to find frequency/complexity data
+reset - erase data created by runall
+top.py - find top phenotypes by frequency
+phenevol - find phenotypic evovability
+makefile - compile cpp
+lookupfst - run fsts on inputs to produce outputs
+KC - compute LZ complexity-like measure
+inputcnt - count inputs per output, i.e. comput frequencies
+genstrings - generate random input strings
+genrob - compute average genetic robustness of pheno
+genfst.py - generate random fsts with FAdo
+genfst.cpp - generate random fsts with REGAL
+draw - draw fst
+convertfst - convert OpenFST-format fst to lookup-optimized HFST binary format
+amatrix - use adjacency matrix formula to compute average number of 0s or 1s (or other motiffs)

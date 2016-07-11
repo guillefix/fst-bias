@@ -1,0 +1,29 @@
+#!/bin/bash
+# hfst-lookup -i [inputfst] -I [input-strings]
+
+# $1 input string size
+# $2 alphabet size
+# $3 number of input strings generated
+# $4 number of files generated
+# $5 nei or not (0 or 1)
+
+for i in $( ls fstop ); do
+  if [ $i -gt $4 ]; then
+    break
+  fi
+  ./genstrings $1 $2 $3 1 $5
+  echo $i
+  infst="fstop/"
+  infst+=$i
+  instr="str/"
+  if [ $5 = "1" ]; then
+    instr="strnei/"
+  fi
+  instr+="0"
+  out="strout/"
+  if [ $5 = "1" ]; then
+    out="neistrout/"
+  fi
+  out+=$i
+  hfst-lookup -i $infst -I $instr > $out
+done
